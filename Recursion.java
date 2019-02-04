@@ -50,6 +50,20 @@ public class Recursion{
         System.out.println("EXPECTED: 0");
         System.out.println(sqrt(0, 0.00001));         // 0
 
+        System.out.println("----");
+
+        System.out.println("sqrt(4, 0.0000000000001)");
+        System.out.println("EXPECTED: 2");
+        System.out.println(sqrt(4, 0.0000000000001));         // 0
+
+        
+        System.out.println("----");
+
+        System.out.println("sqrt(2, 0.0000000000001)");
+        System.out.println("EXPECTED: 1.41421356237");
+        System.out.println(sqrt(2, 0.0000000000001));         // 0
+
+
         System.out.println("\n");
 
         System.out.println("fib()");
@@ -71,6 +85,13 @@ public class Recursion{
         System.out.println("EXPECTED: 13");
         System.out.println(fib(7));                   // 13
 
+        System.out.println("----");
+
+        System.out.println("fib(46)");
+        System.out.println("EXPECTED: 1836311903");
+        System.out.println(fib(46));                   // 
+
+        /*
         System.out.println("makeAllSums()");
         System.out.println("-----------------------\n");
 
@@ -89,5 +110,6 @@ public class Recursion{
         System.out.println("makeAllSums(3)");
         System.out.println("EXPECTED: [0, 3, 2, 5, 1, 4, 3, 6]");
         System.out.println(makeAllSums(3));           // [0, 3, 2, 5, 1, 4, 3, 6]
+        */
     }
 }
