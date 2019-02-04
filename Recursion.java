@@ -16,4 +16,7 @@ public class Recursion{
         System.out.println(sqrt(100,.001));
         System.out.println(sqrt(2,.001));
     }
+    public static int fib(int n){
+        return fibHelper(n,0,0);
+    }
 }
