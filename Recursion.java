@@ -17,15 +17,15 @@ public class Recursion{
         System.out.println(sqrt(2,.001));
     }
     public static int fib(int n){
-        return fibHelper(n,0,1);
+        return fibHelper(n,0,1,1);
     }
-    public static int fibHelper(int n, int first, int second){
+    public static int fibHelper(int n, int first, int second, int counter){
         if (n == 0){
             return 0;
         }
-        if (n == 1){
-            return 1;
+        if (n == counter){
+            return second;
         }
-        return fibHelper(n, first, second);
+        return fibHelper(n, second, second + first, counter + 1);
     }
 }
