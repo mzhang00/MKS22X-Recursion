@@ -17,6 +17,15 @@ public class Recursion{
         System.out.println(sqrt(2,.001));
     }
     public static int fib(int n){
-        return fibHelper(n,0,0);
+        return fibHelper(n,0,1);
+    }
+    public static int fibHelper(int n, int first, int second){
+        if (n == 0){
+            return 0;
+        }
+        if (n == 1){
+            return 1;
+        }
+        return fibHelper(n, first, second);
     }
 }
