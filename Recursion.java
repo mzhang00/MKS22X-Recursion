@@ -12,5 +12,8 @@ public class Recursion{
         return NewtonHelper(n, ((n / guess + guess) / 2), tolerance);
     }
     public static void main(String[] args){
+        System.out.println(sqrt(0,.001));
+        System.out.println(sqrt(100,.001));
+        System.out.println(sqrt(2,.001));
     }
 }
