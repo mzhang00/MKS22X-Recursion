@@ -11,4 +11,6 @@ public class Recursion{
         }
         return NewtonHelper(n, ((n / guess + guess) / 2), tolerance);
     }
+    public static void main(String[] args){
+    }
 }
