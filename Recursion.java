@@ -93,7 +93,6 @@ public class Recursion{
         System.out.println("EXPECTED: 1836311903");
         System.out.println(fib(46));                   // 
 
-        /*
         System.out.println("makeAllSums()");
         System.out.println("-----------------------\n");
 
@@ -112,12 +111,21 @@ public class Recursion{
         System.out.println("makeAllSums(3)");
         System.out.println("EXPECTED: [0, 3, 2, 5, 1, 4, 3, 6]");
         System.out.println(makeAllSums(3));           // [0, 3, 2, 5, 1, 4, 3, 6]
-        */
     }
     public static ArrayList<Integer> makeAllSums(int n){
-        return new ArrayList<Integer>();
+        ArrayList<Integer> result = new ArrayList<>();
+        masHelper(result, n, false);
+        return result;
     }
-    private static ArrayList<Integer> masHelper(int n){
-        return new ArrayList<Integer>();
+    private static ArrayList<Integer> masHelper(ArrayList<Integer> a, int n, boolean returnyet){
+        if (returnyet){
+            return a;
+        }
+        if (n == 0){
+            a.add(n);
+            returnyet = true;
+        }
+        a.add(n);
+        return masHelper(a, n - 1, returnyet);
     }
 }
