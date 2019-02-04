@@ -3,6 +3,12 @@ public class Recursion{
         return NewtonHelper(n, 1, tolerance);
     }
     public static double NewtonHelper(double n, double guess, double tolerance){
-        return 0.0;
+        if (n == 0){
+            return 0;
+        }
+        if (Math.abs((guess * guess - n) / n) * 100 <= tolerance){
+            return guess;
+        }
+        return NewtonHelper(n, ((n / guess + guess) / 2), tolerance);
     }
 }
