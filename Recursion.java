@@ -4,7 +4,7 @@ public class Recursion{
     public static double sqrt(double n, double tolerance){
         return NewtonHelper(n, 1, tolerance);
     }
-    public static double NewtonHelper(double n, double guess, double tolerance){
+    private static double NewtonHelper(double n, double guess, double tolerance){
         if (n == 0){
             return 0;
         }
@@ -23,7 +23,7 @@ public class Recursion{
     public static int fib(int n){
         return fibHelper(n,0,1,1);
     }
-    public static int fibHelper(int n, int first, int second, int counter){
+    private static int fibHelper(int n, int first, int second, int counter){
         if (n == 0){
             return 0;
         }
@@ -115,6 +115,9 @@ public class Recursion{
         */
     }
     public static ArrayList<Integer> makeAllSums(int n){
+        return new ArrayList<Integer>();
+    }
+    private static ArrayList<Integer> masHelper(int n){
         return new ArrayList<Integer>();
     }
 }
