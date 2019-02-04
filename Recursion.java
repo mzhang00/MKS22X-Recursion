@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Recursion{
     public static double sqrt(double n, double tolerance){
         return NewtonHelper(n, 1, tolerance);
@@ -111,5 +113,8 @@ public class Recursion{
         System.out.println("EXPECTED: [0, 3, 2, 5, 1, 4, 3, 6]");
         System.out.println(makeAllSums(3));           // [0, 3, 2, 5, 1, 4, 3, 6]
         */
+    }
+    public static ArrayList<Integer> makeAllSums(int n){
+        return new ArrayList<Integer>();
     }
 }
