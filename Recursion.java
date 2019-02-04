@@ -114,18 +114,17 @@ public class Recursion{
     }
     public static ArrayList<Integer> makeAllSums(int n){
         ArrayList<Integer> result = new ArrayList<>();
-        masHelper(result, n, false);
+        masHelper(result, n, 0);
         return result;
     }
-    private static ArrayList<Integer> masHelper(ArrayList<Integer> a, int n, boolean returnyet){
-        if (returnyet){
-            return a;
-        }
+    private static void masHelper(ArrayList<Integer> a, int n, int leftover){
         if (n == 0){
-            a.add(n);
-            returnyet = true;
+            a.add(0);
+        }else
+        
+        {    
+            masHelper(a, n - 1, 0);
+            masHelper(a, n - 1, n);
         }
-        a.add(n);
-        return masHelper(a, n - 1, returnyet);
     }
 }
