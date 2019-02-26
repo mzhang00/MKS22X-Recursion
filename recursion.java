@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Recursion{
+public class recursion{
     public static double sqrt(double n, double tolerance){
         return NewtonHelper(n, 1, tolerance);
     }
